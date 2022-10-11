@@ -12,7 +12,6 @@ function App() {
   }, []);
 
   return (
-    // <h1>HOME</h1>
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/about" element={<About />} />
