@@ -2,8 +2,15 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './paths/Home.jsx';
 import About from './paths/About';
+import { React, useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 function App() {
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-M76J5TP' })
+  }, []);
+
   return (
     // <h1>HOME</h1>
     <Routes>
