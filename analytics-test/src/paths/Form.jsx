@@ -1,11 +1,15 @@
 import { React, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
-  let [name, setName] = useState("")
+  const navigate = useNavigate();
+
+  let [name, setName] = useState("");
 
   const logTown = (e) => {
     e.preventDefault();
     console.log(name);
+    navigate('/confirmation');
   }
 
   return (
