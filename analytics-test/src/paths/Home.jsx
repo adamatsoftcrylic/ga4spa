@@ -5,9 +5,11 @@ import Form from './Form';
 export default function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <Link className="link" to="/about">About</Link>
-      <Form />
+      <div className='flexbox'>
+        <h1>Home</h1>
+        <Link className="link" to="/about">About</Link>
+        <Form />
+      </div>
     </div>
   )
 }

@@ -8,7 +8,6 @@ export default function Form() {
 
   const logTown = (e) => {
     e.preventDefault();
-    console.log(name);
     navigate('/confirmation');
   }
 
