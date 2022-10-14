@@ -2,10 +2,13 @@ import { React, useEffect } from "react";
 
 
 
+
 export default function Promo() {
+  const dataLayer = window.dataLayer;
+
   useEffect(() => {
     dataLayer.push({
-      'event': "test"
+      'event': "promo-test"
     })
   }, []);
 
