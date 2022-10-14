@@ -9,7 +9,7 @@ import TagManager from 'react-gtm-module';
 function App() {
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-M76J5TP' })
+    TagManager.initialize({ gtmId: 'GTM-NR4FJGF' })
   }, []);
 
   return (
